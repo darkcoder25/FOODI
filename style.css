@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('assets/fonts/clash-display-variable.woff2') format('woff2');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/poppins-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/poppins-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/poppins-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/poppins-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/poppins-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A1316;
+  font-family: 'Poppins', sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.btn-primary {
+  background: #D68240;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #D68240;
+  border-color: #D68240;
+}
+
+.btn-tertiary:hover {
+  color: #D68240;
+}
+
+@media (min-width: 768px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-tertiary {
+    font-size: 18px;
+  }
+}
+
+.like-btn .liked-icon {
+  display: none;
+}
+
+.like-btn:has(input:checked) {
+  background: #D68240;
+  color: #fff;
+}
+
+.like-btn:has(input:checked) .unliked {
+  display: none;
+}
+
+.like-btn:has(input:checked) .liked-icon {
+  display: inline-block;
+}
+
+.like-btn:has(input:focus-visible) {
+  outline: 2px solid #D68240;
+  outline-offset: 2px;
+}
+
+.input-icon {
+  padding-left: 52px;
+}
+
+.cart-btn .cart-on {
+  display: none;
+}
+
+.cart-btn:has(input:checked) {
+  background: #D68240;
+  color: #fff;
+}
+
+.cart-btn:has(input:checked) .cart-off {
+  display: none;
+}
+
+.cart-btn:has(input:checked) .cart-on {
+  display: inline-block;
+}
+
+.cart-btn:has(input:focus-visible) {
+  outline: 2px solid #D68240;
+  outline-offset: 2px;
+}
+
+.btn-secondary:has(input:checked) {
+  background: #D68240;
+  border-color: #D68240;
+}
+
+.filter-empty {
+  display: none;
+  text-align: center;
+}
+
+.menu-filter:has(#f-indian:checked) article:not([data-cat~="indian"]),
+.menu-filter:has(#f-bengali:checked) article:not([data-cat~="bengali"]),
+.menu-filter:has(#f-mexican:checked) article,
+.menu-filter:has(#f-italian:checked) article,
+.menu-filter:has(#f-chinese:checked) article,
+.menu-filter:has(#f-arabian:checked) article,
+.menu-filter:has(#f-japanese:checked) article {
+  display: none;
+}
+
+.menu-filter:has(#f-mexican:checked) .filter-empty,
+.menu-filter:has(#f-italian:checked) .filter-empty,
+.menu-filter:has(#f-chinese:checked) .filter-empty,
+.menu-filter:has(#f-arabian:checked) .filter-empty,
+.menu-filter:has(#f-japanese:checked) .filter-empty {
+  display: block;
+}

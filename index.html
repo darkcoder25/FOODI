@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Foodi is a family restaurant serving fresh, flavourful food. Explore our menu, meet our chefs and order online.">
+<title>FOODI — Taste Happiness In Every Bite</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="tailwind-config.js"></script>
+</head>
+<body class="font-body text-white overflow-x-hidden">
+
+<header class="relative h-[640px] md:h-[900px]">
+  <img src="assets/hero-restaurant.png" alt="Restaurant interior" class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute top-5 md:top-9 left-0 right-0 z-20 px-4 md:px-0">
+    <input type="checkbox" id="navToggle" class="peer hidden">
+    <nav class="max-w-[1460px] mx-auto h-[72px] md:h-[86px] rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-between px-5 md:px-8">
+            <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <span class="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary flex items-center justify-center font-display font-semibold text-white text-xl md:text-2xl">F</span>
+        <span class="font-display font-semibold text-primary text-2xl md:text-[28px] tracking-wide">OODI</span>
+      </a>
+            <ul class="hidden lg:flex items-center gap-8 xl:gap-11 text-nav text-white">
+        <li><a href="index.html" class="text-primary">Home</a></li>
+        <li><a href="menu.html" class="hover:text-primary">Menu</a></li>
+        <li><a href="chef.html" class="hover:text-primary">Chef</a></li>
+        <li><a href="blog.html" class="hover:text-primary">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+      </ul>
+            <div class="flex items-center gap-4 md:gap-6">
+        <a href="menu.html" aria-label="Cart" class="hidden md:block text-white hover:text-primary">
+          <i class="fa-solid fa-basket-shopping text-[22px]"></i>
+        </a>
+        <a href="login.html" class="hidden md:inline-block btn-primary px-7 py-3.5">LOGIN</a>
+        <label for="navToggle" aria-label="Open menu" class="lg:hidden text-white cursor-pointer">
+          <i class="fa-solid fa-bars text-[26px]"></i>
+        </label>
+      </div>
+    </nav>
+        <div class="hidden peer-checked:block lg:peer-checked:hidden max-w-[1460px] mx-auto mt-2 rounded-2xl bg-card/95 backdrop-blur-md px-6 py-6">
+      <ul class="flex flex-col gap-4 text-[18px]">
+        <li><a href="index.html" class="text-primary">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="chef.html">Chef</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="login.html" class="inline-block mt-5 btn-primary px-7 py-3">LOGIN</a>
+    </div>
+  </div>
+
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 pt-10">
+    <span class="w-12 h-0.5 bg-primary"></span>
+    <p class="mt-5 text-[14px] md:text-[16px] tracking-[0.08em]">HELLO, NEW FRIEND</p>
+    <h1 class="mt-4 font-display font-semibold uppercase text-[38px] leading-[1.2] sm:text-[48px] md:text-h1 md:leading-[1.25]">Taste Happiness In<br class="hidden sm:block"> Every Bite</h1>
+    <div class="mt-8 md:mt-10 flex items-center gap-4 md:gap-6">
+      <a href="menu.html" class="btn-secondary px-6 md:px-8 py-3.5 md:py-4">EXPLORE MENU</a>
+      <a href="contact.html" class="px-4 md:px-6 py-3.5 md:py-4 btn-tertiary">RESERVATION</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="bg-ink pt-24 md:pt-[160px] pb-24 md:pb-[160px]">
+  <div class="max-w-[1240px] mx-auto px-5 md:px-0 grid md:grid-cols-[0.73fr_1fr] gap-12 md:gap-40 items-start">
+    <div>
+      <p class="text-[14px] md:text-[16px] tracking-[0.08em]">ABOUT US</p>
+      <span class="block w-10 h-0.5 bg-primary mt-2"></span>
+      <h2 class="mt-8 font-display font-semibold text-[30px] md:text-h2 leading-[1.35]">We Invite You to Visit Our Restaurant</h2>
+      <p class="mt-9 text-mute text-[15px] md:text-[16px] leading-[1.75]">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</p>
+      <a href="#features" class="inline-block mt-10 btn-primary px-9 py-4">READ MORE</a>
+    </div>
+    <img loading="lazy" src="assets/about-chef.png" alt="Chef sifting flour" class="w-full h-[300px] md:h-[392px] object-cover rounded-xl">
+  </div>
+</section>
+
+<section id="features" class="bg-ink pt-4 pb-20 md:pb-[150px]">
+  <div class="text-center px-5">
+    <p class="text-[14px] md:text-[16px] tracking-[0.08em]">FEATURES</p>
+    <span class="block w-10 h-0.5 bg-primary mt-2 mx-auto"></span>
+    <h2 class="mt-6 font-display font-semibold text-[30px] md:text-h2">Why people choose us?</h2>
+    <p class="mt-7 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[780px] mx-auto">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</p>
+  </div>
+  <div class="max-w-[1460px] mx-auto px-5 md:px-8 grid md:grid-cols-3 gap-12 md:gap-8 mt-16 md:mt-[90px] text-center">
+    <div>
+      <i class="fa-solid fa-utensils mx-auto text-[64px]"></i>
+      <h3 class="mt-8 font-display font-semibold text-[22px] md:text-h3 tracking-wide uppercase">Menu For Every Taste</h3>
+      <p class="mt-5 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[340px] mx-auto">Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem.</p>
+    </div>
+    <div>
+      <i class="fa-solid fa-wheat-awn mx-auto text-[64px]"></i>
+      <h3 class="mt-8 font-display font-semibold text-[22px] md:text-h3 tracking-wide uppercase">Always Quality Ingredients</h3>
+      <p class="mt-5 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[340px] mx-auto">Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem.</p>
+    </div>
+    <div>
+      <i class="fa-solid fa-kitchen-set mx-auto text-[64px]"></i>
+      <h3 class="mt-8 font-display font-semibold text-[22px] md:text-h3 tracking-wide uppercase">Experienced Chefs</h3>
+      <p class="mt-5 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[340px] mx-auto">Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-ink pb-24 md:pb-[130px]">
+  <div class="text-center px-5">
+    <p class="text-[14px] md:text-[16px] tracking-[0.08em]">POPULAR MENU</p>
+    <span class="block w-10 h-0.5 bg-primary mt-2 mx-auto"></span>
+    <h2 class="mt-6 font-display font-semibold text-[30px] md:text-h2">Explore Our Foods</h2>
+    <p class="mt-7 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[780px] mx-auto">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</p>
+  </div>
+  <div class="max-w-[1313px] mx-auto px-5 md:px-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-14 md:mt-[95px]">
+        <article class="bg-card rounded-2xl p-5">
+      <div class="relative">
+        <img loading="lazy" src="assets/food-fried-chicken.png" alt="Fried Chicken" class="w-full h-[220px] md:h-[254px] object-cover rounded-lg">
+        <label class="like-btn absolute top-4 right-4 w-10 h-10 rounded-full bg-teal flex items-center justify-center text-primary hover:bg-primary hover:text-white cursor-pointer"><input type="checkbox" class="sr-only" aria-label="Add to favourites"><i class="fa-regular fa-heart text-[18px] unliked"></i><i class="fa-solid fa-heart text-[18px] liked-icon"></i></label>
+      </div>
+      <div class="mt-5 flex gap-1 text-primary">
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-regular fa-star text-[18px]"></i>
+      </div>
+      <h3 class="mt-4 font-display font-semibold text-primary text-[22px] md:text-h3">Fried Chicken</h3>
+      <p class="mt-4 text-mute text-[15px] md:text-[16px] leading-[1.7]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="mt-7 flex items-center justify-between">
+        <span class="text-primary text-[20px]">Rs.250</span>
+        <label class="cart-btn w-11 h-11 rounded-full border border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white cursor-pointer"><input type="checkbox" class="sr-only" aria-label="Add to cart"><i class="fa-solid fa-basket-shopping text-[18px] cart-off"></i><i class="fa-solid fa-check text-[18px] cart-on"></i></label>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-5">
+      <div class="relative">
+        <img loading="lazy" src="assets/food-kolkata-roll.png" alt="Kolkata Style Roll" class="w-full h-[220px] md:h-[254px] object-cover rounded-lg">
+        <label class="like-btn absolute top-4 right-4 w-10 h-10 rounded-full bg-teal flex items-center justify-center text-primary hover:bg-primary hover:text-white cursor-pointer"><input type="checkbox" class="sr-only" aria-label="Add to favourites"><i class="fa-regular fa-heart text-[18px] unliked"></i><i class="fa-solid fa-heart text-[18px] liked-icon"></i></label>
+      </div>
+      <div class="mt-5 flex gap-1 text-primary">
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-regular fa-star text-[18px]"></i>
+      </div>
+      <h3 class="mt-4 font-display font-semibold text-primary text-[22px] md:text-h3">Kolkata Style Roll</h3>
+      <p class="mt-4 text-mute text-[15px] md:text-[16px] leading-[1.7]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="mt-7 flex items-center justify-between">
+        <span class="text-primary text-[20px]">Rs.99</span>
+        <label class="cart-btn w-11 h-11 rounded-full border border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white cursor-pointer"><input type="checkbox" class="sr-only" aria-label="Add to cart"><i class="fa-solid fa-basket-shopping text-[18px] cart-off"></i><i class="fa-solid fa-check text-[18px] cart-on"></i></label>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-5">
+      <div class="relative">
+        <img loading="lazy" src="assets/food-chicken-burger.png" alt="Chicken Burger" class="w-full h-[220px] md:h-[254px] object-cover rounded-lg">
+        <label class="like-btn absolute top-4 right-4 w-10 h-10 rounded-full bg-teal flex items-center justify-center text-primary hover:bg-primary hover:text-white cursor-pointer"><input type="checkbox" class="sr-only" aria-label="Add to favourites"><i class="fa-regular fa-heart text-[18px] unliked"></i><i class="fa-solid fa-heart text-[18px] liked-icon"></i></label>
+      </div>
+      <div class="mt-5 flex gap-1 text-primary">
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-solid fa-star text-[18px]"></i>
+        <i class="fa-regular fa-star text-[18px]"></i>
+      </div>
+      <h3 class="mt-4 font-display font-semibold text-primary text-[22px] md:text-h3">Chicken Burger</h3>
+      <p class="mt-4 text-mute text-[15px] md:text-[16px] leading-[1.7]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="mt-7 flex items-center justify-between">
+        <span class="text-primary text-[20px]">Rs.175</span>
+        <label class="cart-btn w-11 h-11 rounded-full border border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white cursor-pointer"><input type="checkbox" class="sr-only" aria-label="Add to cart"><i class="fa-solid fa-basket-shopping text-[18px] cart-off"></i><i class="fa-solid fa-check text-[18px] cart-on"></i></label>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="relative">
+  <img loading="lazy" src="assets/working-hours-bg.png" alt="Chef cutting vegetables" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative max-w-[1460px] mx-auto px-5 md:px-8 py-16 md:py-0 md:h-[777px] flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
+    <div class="pt-4 md:pt-0 md:pl-12">
+      <p class="text-[14px] md:text-[16px] tracking-[0.08em]">CONTACT US</p>
+      <span class="block w-10 h-0.5 bg-primary mt-2"></span>
+      <h2 class="mt-7 font-display font-semibold text-[30px] md:text-h2">Working Hours</h2>
+      <a href="contact.html" class="inline-block mt-9 btn-primary px-8 py-4">CONTACT US</a>
+    </div>
+    <div class="bg-card/95 rounded-2xl w-full max-w-[467px] md:h-[440px] px-8 py-12 md:py-0 md:px-0 flex flex-col items-center justify-center text-center">
+      <h4 class="font-display font-semibold text-[18px] md:text-h4">Monday to Friday</h4>
+      <p class="mt-4 text-[18px] md:text-[20px]">09:00 AM - 10.00 PM</p>
+      <h4 class="font-display font-semibold text-[18px] md:text-h4 mt-14 md:mt-[72px]">Saturday to Sunday</h4>
+      <p class="mt-4 text-[18px] md:text-[20px]">09:00 AM - 07.00 PM</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-ink pt-24 md:pt-[140px] pb-24 md:pb-[140px]">
+  <div class="text-center px-5">
+    <p class="text-[14px] md:text-[16px] tracking-[0.08em]">OUR CHEF</p>
+    <span class="block w-10 h-0.5 bg-primary mt-2 mx-auto"></span>
+    <h2 class="mt-6 font-display font-semibold text-[30px] md:text-h2">Meet our expert chef</h2>
+    <p class="mt-7 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[780px] mx-auto">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</p>
+  </div>
+  <div class="max-w-[1313px] mx-auto px-5 md:px-0 grid sm:grid-cols-2 lg:grid-cols-4 gap-7 mt-14 md:mt-[90px]">
+    <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-masum.png" alt="Masum Rana" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Masum Rana</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+    <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-manisha.png" alt="Manisha Agarwal" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Manisha Agarwal</h3>
+      <p class="mt-2 text-mute text-[16px]">Senior Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+    <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-muhibbur.png" alt="Muhibbur Rashid" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Muhibbur Rashid</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+    <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-rashed.png" alt="Rashed Kabir" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Rashed Kabir</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="bg-ink pb-24 md:pb-[120px]">
+  <div class="text-center px-5">
+    <p class="text-[14px] md:text-[16px] tracking-[0.08em]">TESTIMONIAL</p>
+    <span class="block w-10 h-0.5 bg-primary mt-2 mx-auto"></span>
+    <h2 class="mt-6 font-display font-semibold text-[30px] md:text-h2">What our clients say about us?</h2>
+    <p class="mt-7 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[780px] mx-auto">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</p>
+  </div>
+  <div class="max-w-[1313px] mx-auto px-5 md:px-0 grid md:grid-cols-3 gap-7 mt-14 md:mt-[80px]">
+        <div>
+      <div class="bg-card rounded-t-2xl p-8">
+        <i class="fa-solid fa-quote-left text-sun text-[30px]"></i>
+        <p class="mt-7 text-mute text-[15px] md:text-[16px] leading-[1.65]">From the moment we walked in, everything felt perfect — the food, the ambiance, and the warm service. It's not just a meal, it's an experience we keep coming back for. Highly recommended for anyone who loves great taste and comfort</p>
+        <div class="mt-6 flex gap-1 text-sun">
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-regular fa-star text-[18px]"></i>
+        </div>
+      </div>
+      <div class="bg-card rounded-bl-2xl w-[75%] px-6 py-5 flex items-center gap-4">
+        <img loading="lazy" src="assets/avatar-jerome.png" alt="Jerome Bell" class="w-12 h-12 rounded-full object-cover">
+        <div>
+          <p class="font-display font-semibold text-[20px]">Jerome Bell</p>
+          <p class="mt-1 text-mute text-[16px]">New York, USA</p>
+        </div>
+      </div>
+    </div>
+        <div>
+      <div class="bg-card rounded-t-2xl p-8">
+        <i class="fa-solid fa-quote-left text-candy text-[30px]"></i>
+        <p class="mt-7 text-mute text-[15px] md:text-[16px] leading-[1.65]">From the moment we walked in, everything felt perfect — the food, the ambiance, and the warm service. It's not just a meal, it's an experience we keep coming back for. Highly recommended for anyone who loves great taste and comfort</p>
+        <div class="mt-6 flex gap-1 text-candy">
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-regular fa-star text-[18px]"></i>
+        </div>
+      </div>
+      <div class="bg-card rounded-bl-2xl w-[75%] px-6 py-5 flex items-center gap-4">
+        <img loading="lazy" src="assets/avatar-jacob.png" alt="Jacob Jones" class="w-12 h-12 rounded-full object-cover">
+        <div>
+          <p class="font-display font-semibold text-[20px]">Jacob Jones</p>
+          <p class="mt-1 text-mute text-[16px]">London, UK</p>
+        </div>
+      </div>
+    </div>
+        <div>
+      <div class="bg-card rounded-t-2xl p-8">
+        <i class="fa-solid fa-quote-left text-salmon text-[30px]"></i>
+        <p class="mt-7 text-mute text-[15px] md:text-[16px] leading-[1.65]">From the moment we walked in, everything felt perfect — the food, the ambiance, and the warm service. It's not just a meal, it's an experience we keep coming back for. Highly recommended for anyone who loves great taste and comfort</p>
+        <div class="mt-6 flex gap-1 text-salmon">
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-solid fa-star text-[18px]"></i>
+          <i class="fa-regular fa-star text-[18px]"></i>
+        </div>
+      </div>
+      <div class="bg-card rounded-bl-2xl w-[75%] px-6 py-5 flex items-center gap-4">
+        <img loading="lazy" src="assets/avatar-floyd.png" alt="Floyd Miles" class="w-12 h-12 rounded-full object-cover">
+        <div>
+          <p class="font-display font-semibold text-[20px]">Floyd Miles</p>
+          <p class="mt-1 text-mute text-[16px]">New York, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-14 flex justify-center gap-3">
+    <span class="w-3 h-3 rounded-full bg-primary"></span>
+    <span class="w-3 h-3 rounded-full bg-teal"></span>
+    <span class="w-3 h-3 rounded-full bg-teal"></span>
+  </div>
+</section>
+
+<section class="bg-ink pb-24 md:pb-[110px]">
+  <div class="max-w-[1460px] mx-auto px-5 md:px-0 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+    <div>
+      <p class="font-display font-semibold text-[32px] md:text-h2">1287<span class="text-primary">+</span></p>
+      <p class="mt-2 text-[14px] md:text-[16px] tracking-[0.06em] uppercase">Visitors Daily</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-[32px] md:text-h2">578<span class="text-primary">+</span></p>
+      <p class="mt-2 text-[14px] md:text-[16px] tracking-[0.06em] uppercase">Deliveries Monthly</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-[32px] md:text-h2">1440<span class="text-primary">+</span></p>
+      <p class="mt-2 text-[14px] md:text-[16px] tracking-[0.06em] uppercase">Positive Feedback</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-[32px] md:text-h2">40<span class="text-primary">+</span></p>
+      <p class="mt-2 text-[14px] md:text-[16px] tracking-[0.06em] uppercase">Awards And Honors</p>
+    </div>
+  </div>
+</section>
+
+<section class="relative">
+  <img loading="lazy" src="assets/app-section-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover">
+  <div class="relative max-w-[1460px] mx-auto px-5 md:px-8 py-16 md:py-0 md:h-[567px]">
+    <div class="md:pt-[95px] max-w-[520px]">
+      <h2 class="font-display font-semibold text-[30px] md:text-h2 leading-[1.4]">Simple Way To<br>Order Your Foods</h2>
+      <div class="mt-10 flex flex-wrap gap-5">
+        <a href="https://play.google.com/store" target="_blank" rel="noopener" class="bg-white rounded-xl px-6 py-3 flex items-center gap-3 text-black">
+          <i class="fa-brands fa-google-play text-[26px]"></i>
+          <span class="text-left leading-tight"><span class="block text-[10px] tracking-wide text-gray-600">GET IT ON</span><span class="block text-[20px] font-semibold">Google Play</span></span>
+        </a>
+        <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener" class="bg-white rounded-xl px-6 py-3 flex items-center gap-3 text-black">
+          <i class="fa-brands fa-apple text-[24px]"></i>
+          <span class="text-left leading-tight"><span class="block text-[10px] tracking-wide text-gray-600">GET IT ON</span><span class="block text-[20px] font-semibold">Apple Store</span></span>
+        </a>
+      </div>
+    </div>
+        <div class="hidden md:block absolute top-[-67px] right-[575px] w-[283px] rounded-2xl bg-[#F6F5F2] shadow-2xl overflow-hidden text-gray-800">
+      <div class="p-4 pb-0 flex items-center justify-between">
+        <span class="flex items-center gap-1"><span class="w-5 h-5 rounded bg-primary flex items-center justify-center text-white text-[11px] font-display font-semibold">F</span><span class="font-display font-semibold text-primary text-[13px]">OODI</span></span>
+        <img loading="lazy" src="assets/avatar-jerome.png" alt="" class="w-6 h-6 rounded-full object-cover">
+      </div>
+      <div class="px-4 pt-3 text-[13px]">Order your favourite food!</div>
+      <div class="px-4 pt-3 flex items-center gap-2">
+        <span class="flex-1 bg-white rounded-full h-9 flex items-center gap-2 px-3 text-[12px] text-gray-500"><i class="fa-solid fa-magnifying-glass text-[13px]"></i>Search</span>
+        <span class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><i class="fa-solid fa-sliders text-[14px]"></i></span>
+      </div>
+      <div class="px-4 pt-3 flex gap-2 text-[11px]">
+        <span class="bg-primary text-white rounded-full px-4 py-1.5">All</span>
+        <span class="bg-gray-200 rounded-full px-4 py-1.5">Combos</span>
+        <span class="bg-gray-200 rounded-full px-4 py-1.5">Ind..</span>
+      </div>
+      <div class="p-4 grid grid-cols-2 gap-2">
+        <div class="bg-white rounded-xl p-2"><img loading="lazy" src="assets/app-item-burger.png" alt="" class="w-full h-14 object-contain"><p class="mt-1 text-[9px] font-semibold">Cheeseburger</p><p class="text-[8px] text-gray-500">Wendy's Burger</p><p class="text-[8px]"><span class="text-primary">Rs.199</span> <span class="float-right text-gray-700">★ 4.9</span></p></div>
+        <div class="bg-white rounded-xl p-2"><img loading="lazy" src="assets/app-item-pizza.png" alt="" class="w-full h-14 object-contain"><p class="mt-1 text-[9px] font-semibold">Pizza</p><p class="text-[8px] text-gray-500">Italian Cheese Pizza</p><p class="text-[8px]"><span class="text-primary">Rs.299</span> <span class="float-right text-gray-700">★ 4.9</span></p></div>
+        <div class="bg-white rounded-xl p-2"><img loading="lazy" src="assets/app-item-shawarma.png" alt="" class="w-full h-14 object-contain"><p class="mt-1 text-[9px] font-semibold">Shawarma</p><p class="text-[8px] text-gray-500">Chicken Shawarma</p><p class="text-[8px]"><span class="text-primary">Rs.149</span> <span class="float-right text-gray-700">★ 4.9</span></p></div>
+        <div class="bg-white rounded-xl p-2"><img loading="lazy" src="assets/app-item-chicken.png" alt="" class="w-full h-14 object-contain"><p class="mt-1 text-[9px] font-semibold">Chicken</p><p class="text-[8px] text-gray-500">Kfc Fried chicken</p><p class="text-[8px]"><span class="text-primary">Rs.199</span> <span class="float-right text-gray-700">★ 4.9</span></p></div>
+      </div>
+      <div class="relative bg-primary h-14 flex items-center justify-around text-white">
+        <i class="fa-solid fa-house text-[18px]"></i>
+        <i class="fa-solid fa-user text-[18px]"></i>
+        <i class="fa-solid fa-credit-card text-[18px]"></i>
+        <i class="fa-solid fa-heart text-[18px]"></i>
+        <span class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-primary border-4 border-ink flex items-center justify-center text-white text-[18px]"><i class="fa-solid fa-plus"></i></span>
+      </div>
+    </div>
+    <div class="hidden md:block absolute top-0 right-[252px] w-[290px] rounded-2xl bg-white shadow-2xl p-4 text-gray-800">
+      <div class="flex items-center justify-between text-gray-700">
+        <i class="fa-solid fa-arrow-left text-[16px]"></i>
+        <i class="fa-solid fa-magnifying-glass text-[16px]"></i>
+      </div>
+      <div class="mt-3 bg-gray-100 rounded-xl p-6 flex items-center justify-center"><img loading="lazy" src="assets/app-detail-burger.png" alt="" class="h-28 object-contain"></div>
+      <p class="mt-4 text-[13px] font-semibold text-gray-900">Cheeseburger Wendy's Burger</p>
+      <p class="mt-2 text-[11px] text-gray-500"><i class="fa-solid fa-star text-primary"></i> 4.9 <span class="ml-3">26 mins</span></p>
+      <p class="mt-3 text-[9px] leading-[1.6] text-gray-400">The Cheeseburger Wendy's Burger is a classic fast food burger that packs a punch of flavor in every bite. Made with a juicy beef patty cooked to perfection, it's topped with melted American cheese, crispy lettuce, ripe tomato, and crunchy pickles.</p>
+      <p class="mt-3 text-[11px] text-gray-700">Spicy</p>
+      <div class="mt-2 h-1 rounded-full bg-gray-200 relative"><span class="absolute left-0 top-0 h-1 w-3/4 bg-primary rounded-full"></span><span class="absolute top-1/2 -translate-y-1/2 left-3/4 w-3 h-3 rounded-full bg-primary border-2 border-white"></span></div>
+      <div class="mt-1 flex justify-between text-[9px]"><span class="text-green-600">Mild</span><span class="text-red-500">Hot</span></div>
+      <div class="mt-4 flex items-center justify-between">
+        <span class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-[12px]"><i class="fa-solid fa-minus text-[10px]"></i></span><span class="text-[12px]">2</span><span class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-[12px]"><i class="fa-solid fa-plus text-[10px]"></i></span></span>
+        <button class="border border-primary text-primary text-[11px] rounded-lg px-5 py-2.5">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-ink pt-24 md:pt-[190px] pb-24 md:pb-[150px]">
+  <div class="max-w-[1313px] mx-auto px-5 md:px-0">
+    <div class="relative rounded-2xl overflow-hidden">
+      <img loading="lazy" src="assets/newsletter-bg.png" alt="Restaurant" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/55"></div>
+      <div class="relative text-center px-5 py-16 md:py-[100px]">
+        <p class="text-[14px] md:text-[16px] tracking-[0.08em]">NEWSLETTER</p>
+        <h2 class="mt-4 font-display font-semibold text-[30px] md:text-h2">Subscribe Our Newsletter</h2>
+        <p class="mt-6 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[640px] mx-auto">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut.</p>
+        <form class="mt-10 flex flex-col sm:flex-row justify-center gap-4" action="mailto:infofoodi@gmail.com" method="post" enctype="text/plain">
+          <input type="email" name="email" required aria-label="Email address" placeholder="Type Your Email Id" class="w-full sm:w-[420px] md:w-[623px] h-[56px] rounded-lg bg-teal px-6 text-white placeholder-white/90 focus:outline-none focus:ring-1 focus:ring-primary">
+          <button class="h-[56px] btn-primary px-8">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-card pt-20 md:pt-[105px]">
+  <div class="max-w-[1460px] mx-auto px-5 md:px-0 grid sm:grid-cols-2 lg:grid-cols-[2.2fr_1.2fr_1fr_1.2fr] gap-12">
+    <div>
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center font-display font-semibold text-white text-2xl">F</span>
+        <span class="font-display font-semibold text-primary text-[28px] tracking-wide">OODI</span>
+      </a>
+      <p class="mt-8 text-mute text-[15px] md:text-[16px] leading-[1.8] max-w-[400px]">Lorem ipsum dolor sit amet consectetur. Tristique cursus morbi nibh nec et vulputate. Turpis tortor nisi imperdiet quis accumsan. Ligula netus amet leo ultricies. Neque venenatis magnis amet eget sagittis leo enim.</p>
+      <div class="mt-10 flex gap-4">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[15px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-10 h-10 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[14px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[15px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[14px]"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-[22px] md:text-h3">Contact Us</h3>
+      <ul class="mt-8 space-y-6">
+        <li class="flex items-center gap-4">
+          <span class="w-10 h-10 rounded-full bg-teal flex items-center justify-center shrink-0"><i class="fa-solid fa-envelope text-[16px]"></i></span>
+          <span class="text-mute text-[18px] md:text-[20px]">infofoodi@gmail.com</span>
+        </li>
+        <li class="flex items-center gap-4">
+          <span class="w-10 h-10 rounded-full bg-teal flex items-center justify-center shrink-0"><i class="fa-solid fa-phone text-[16px]"></i></span>
+          <span class="text-mute text-[18px] md:text-[20px]">+91 7029112661</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-[22px] md:text-h3">User Link</h3>
+      <ul class="mt-8 space-y-4 text-mute text-[18px] md:text-[20px]">
+        <li><a href="contact.html" class="hover:text-primary">Contact Us</a></li>
+        <li><a href="menu.html" class="hover:text-primary">Order Delivery</a></li>
+        <li><a href="legal.html#payments" class="hover:text-primary">Payments &amp; Tax</a></li>
+        <li><a href="legal.html#terms" class="hover:text-primary">Terms of Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-[22px] md:text-h3">Location</h3>
+      <p class="mt-8 text-mute text-[18px] md:text-[20px] leading-[1.7]">543 Country Club Ave,<br>NC 27587, London, UK<br>+1257 6541120</p>
+      <div class="mt-8 flex flex-wrap gap-2">
+        <img loading="lazy" src="assets/pay-mastercard.png" alt="Mastercard" class="h-10 w-14 object-contain bg-white rounded p-1">
+        <img loading="lazy" src="assets/pay-gpay.png" alt="Google Pay" class="h-10 w-14 object-contain bg-white rounded p-1">
+        <img loading="lazy" src="assets/pay-visa.png" alt="Visa" class="h-10 w-14 object-contain bg-white rounded p-1">
+        <img loading="lazy" src="assets/pay-paypal.png" alt="PayPal" class="h-10 w-14 object-contain bg-white rounded p-1">
+      </div>
+    </div>
+  </div>
+  <div class="max-w-[1460px] mx-auto px-5 md:px-0 mt-16 md:mt-[90px] border-t border-dashed border-white/15">
+    <div class="py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-mute text-[15px] md:text-[16px]">
+      <p>©2026 Foodi, All rights reserved</p>
+      <div class="flex gap-8">
+        <a href="legal.html#privacy" class="hover:text-primary">Privacy Policy</a>
+        <a href="legal.html#terms" class="hover:text-primary">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

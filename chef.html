@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Meet the expert chefs behind every dish at Foodi.">
+<title>FOODI — Our Chef</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="tailwind-config.js"></script>
+</head>
+<body class="font-body text-white overflow-x-hidden">
+
+<header class="relative bg-card">
+    <div class="absolute top-5 md:top-9 left-0 right-0 z-20 px-4 md:px-0">
+    <input type="checkbox" id="navToggle" class="peer hidden">
+    <nav class="max-w-[1460px] mx-auto h-[72px] md:h-[86px] rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-between px-5 md:px-8">
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <span class="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary flex items-center justify-center font-display font-semibold text-white text-xl md:text-2xl">F</span>
+        <span class="font-display font-semibold text-primary text-2xl md:text-[28px] tracking-wide">OODI</span>
+      </a>
+      <ul class="hidden lg:flex items-center gap-8 xl:gap-11 text-nav text-white">
+        <li><a href="index.html" class="hover:text-primary">Home</a></li>
+        <li><a href="menu.html" class="hover:text-primary">Menu</a></li>
+        <li><a href="chef.html" class="text-primary">Chef</a></li>
+        <li><a href="blog.html" class="hover:text-primary">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-4 md:gap-6">
+        <a href="menu.html" aria-label="Cart" class="hidden md:block text-white hover:text-primary">
+          <i class="fa-solid fa-basket-shopping text-[22px]"></i>
+        </a>
+        <a href="login.html" class="hidden md:inline-block btn-primary px-7 py-3.5">LOGIN</a>
+        <label for="navToggle" aria-label="Open menu" class="lg:hidden text-white cursor-pointer">
+          <i class="fa-solid fa-bars text-[26px]"></i>
+        </label>
+      </div>
+    </nav>
+        <div class="hidden peer-checked:block lg:peer-checked:hidden max-w-[1460px] mx-auto mt-2 rounded-2xl bg-ink/95 backdrop-blur-md px-6 py-6">
+      <ul class="flex flex-col gap-4 text-[18px]">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="chef.html" class="text-primary">Chef</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="login.html" class="inline-block mt-5 btn-primary px-7 py-3">LOGIN</a>
+    </div>
+  </div>
+
+    <div class="pt-[170px] pb-20 md:pt-[254px] md:pb-0 md:h-[612px] text-center px-4">
+    <h1 class="font-display font-semibold text-[38px] leading-[1.25] md:text-h1 md:leading-[1.25]">Home / <span class="text-primary">Our Chef</span></h1>
+    <p class="mt-8 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[780px] mx-auto">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</p>
+  </div>
+</header>
+
+<section class="bg-ink pt-24 md:pt-[140px] pb-24 md:pb-[130px]">
+  <div class="text-center px-5">
+    <h2 class="font-display font-semibold text-[30px] md:text-h2">Our World Class Chef</h2>
+    <p class="mt-7 text-mute text-[15px] md:text-[16px] leading-[1.75] max-w-[780px] mx-auto">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</p>
+  </div>
+  <div class="max-w-[1313px] mx-auto px-5 md:px-0 grid sm:grid-cols-2 lg:grid-cols-4 gap-7 mt-14 md:mt-[90px]">
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-masum.png" alt="Masum Rana" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Masum Rana</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-manisha.png" alt="Manisha Agarwal" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Manisha Agarwal</h3>
+      <p class="mt-2 text-mute text-[16px]">Senior Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-muhibbur.png" alt="Muhibbur Rashid" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Muhibbur Rashid</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-rashed.png" alt="Rashed Kabir" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Rashed Kabir</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-jame-radley.png" alt="Jame Radley" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Jame Radley</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-garima-arora.jpg" alt="Garima Arora" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Garima Arora</h3>
+      <p class="mt-2 text-mute text-[16px]">Senior Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-romy-gill.jpg" alt="Romy Gill" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Romy Gill</h3>
+      <p class="mt-2 text-mute text-[16px]">Senior Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-keneth-conroy.png" alt="Keneth Conroy" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Keneth Conroy</h3>
+      <p class="mt-2 text-mute text-[16px]">Assistant Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-esther-howard.png" alt="Esther Howard" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Esther Howard</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-robert-fox.png" alt="Robert Fox" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Robert Fox</h3>
+      <p class="mt-2 text-mute text-[16px]">Senior Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-dipna-anand.jpg" alt="Dipna Anand" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Dipna Anand</h3>
+      <p class="mt-2 text-mute text-[16px]">Master Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+        <article class="bg-card rounded-2xl p-4 text-center">
+      <img loading="lazy" src="assets/chef-asma-khan.jpg" alt="Asma Khan" class="w-full h-[260px] md:h-[290px] object-cover object-top rounded-lg">
+      <h3 class="mt-6 font-display font-semibold text-[22px] md:text-h3">Asma Khan</h3>
+      <p class="mt-2 text-mute text-[16px]">Senior Chef</p>
+      <div class="mt-5 flex justify-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[14px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[13px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[14px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[13px]"></i></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="bg-card pt-20 md:pt-[105px]">
+  <div class="max-w-[1460px] mx-auto px-5 md:px-0 grid sm:grid-cols-2 lg:grid-cols-[2.2fr_1.2fr_1fr_1.2fr] gap-12">
+    <div>
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center font-display font-semibold text-white text-2xl">F</span>
+        <span class="font-display font-semibold text-primary text-[28px] tracking-wide">OODI</span>
+      </a>
+      <p class="mt-8 text-mute text-[15px] md:text-[16px] leading-[1.8] max-w-[400px]">Lorem ipsum dolor sit amet consectetur. Tristique cursus morbi nibh nec et vulputate. Turpis tortor nisi imperdiet quis accumsan. Ligula netus amet leo ultricies. Neque venenatis magnis amet eget sagittis leo enim.</p>
+      <div class="mt-10 flex gap-4">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-facebook-f text-[15px]"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X" class="w-10 h-10 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-x-twitter text-[14px]"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-instagram text-[15px]"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-teal flex items-center justify-center hover:bg-primary"><i class="fa-brands fa-linkedin-in text-[14px]"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-[22px] md:text-h3">Contact Us</h3>
+      <ul class="mt-8 space-y-6">
+        <li class="flex items-center gap-4">
+          <span class="w-10 h-10 rounded-full bg-teal flex items-center justify-center shrink-0"><i class="fa-solid fa-envelope text-[16px]"></i></span>
+          <span class="text-mute text-[18px] md:text-[20px]">infofoodi@gmail.com</span>
+        </li>
+        <li class="flex items-center gap-4">
+          <span class="w-10 h-10 rounded-full bg-teal flex items-center justify-center shrink-0"><i class="fa-solid fa-phone text-[16px]"></i></span>
+          <span class="text-mute text-[18px] md:text-[20px]">+91 7029112661</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-[22px] md:text-h3">User Link</h3>
+      <ul class="mt-8 space-y-4 text-mute text-[18px] md:text-[20px]">
+        <li><a href="contact.html" class="hover:text-primary">Contact Us</a></li>
+        <li><a href="menu.html" class="hover:text-primary">Order Delivery</a></li>
+        <li><a href="legal.html#payments" class="hover:text-primary">Payments &amp; Tax</a></li>
+        <li><a href="legal.html#terms" class="hover:text-primary">Terms of Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-[22px] md:text-h3">Location</h3>
+      <p class="mt-8 text-mute text-[18px] md:text-[20px] leading-[1.7]">543 Country Club Ave,<br>NC 27587, London, UK<br>+1257 6541120</p>
+      <div class="mt-8 flex flex-wrap gap-2">
+        <img loading="lazy" src="assets/pay-mastercard.png" alt="Mastercard" class="h-10 w-14 object-contain bg-white rounded p-1">
+        <img loading="lazy" src="assets/pay-gpay.png" alt="Google Pay" class="h-10 w-14 object-contain bg-white rounded p-1">
+        <img loading="lazy" src="assets/pay-visa.png" alt="Visa" class="h-10 w-14 object-contain bg-white rounded p-1">
+        <img loading="lazy" src="assets/pay-paypal.png" alt="PayPal" class="h-10 w-14 object-contain bg-white rounded p-1">
+      </div>
+    </div>
+  </div>
+  <div class="max-w-[1460px] mx-auto px-5 md:px-0 mt-16 md:mt-[90px] border-t border-dashed border-white/15">
+    <div class="py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-mute text-[15px] md:text-[16px]">
+      <p>©2026 Foodi, All rights reserved</p>
+      <div class="flex gap-8">
+        <a href="legal.html#privacy" class="hover:text-primary">Privacy Policy</a>
+        <a href="legal.html#terms" class="hover:text-primary">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
